@@ -1,0 +1,104 @@
+/*项目各个网页之间公共的样式*/
+
+    /*所有大的区块版心居中*/
+.cen1170 {
+    width: 1170px;
+    margin: 10px auto;
+    /*background-color: red;*/
+}
+    /*头部和尾部通栏的公共样式*/
+.fluid{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    height: 30px;
+}
+    /*字体颜色*/
+.c-orange{            /*橘黄色*/
+    color:#f76120;
+}
+.c-blue{               /*蓝色*/
+    color:#2bb8aa;
+}
+.c-dgray{             /*深灰色*/
+    color:#333;
+}
+.c-gray{              /*灰色*/
+    color:#666;
+}
+.c-lgray{             /*浅灰色*/
+    color:#999;
+}
+    /*背景颜色*/
+.bg-orangegray{
+    background:#C0AC85;   /*橘灰色*/
+}
+.bg-silverorange{
+    background:#F3B64A;   /*金黄色*/
+}
+
+    /*input输入框提示文本的设置*/
+input::-webkit-input-placeholder{
+    color:#999;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#999;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#999;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#999;
+}
+    /*设置外边距*/
+.ml10{
+    margin-left: 10px;
+}
+    /*设置字体大小*/
+.f16 {
+    font-size: 16px;
+}
+    /*设置文字对齐方式*/
+.t-alignR{
+    text-align: right;
+}
+    /*超链接a标签的字体样式*/
+a{
+    color: #666;
+    text-decoration: none;
+}
+a:hover{
+    color: #2bb8aa;
+    text-decoration: underline;
+}
+    /*列表ul下的公共样式*/
+ul{
+    list-style: none;
+}
+    /*左浮和右浮*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+    /*清除浮动导致：高度塌陷 和 父子元素垂直外边距重叠*/
+.clearfix:after,.clearfix:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*
+设置图片或者行内块元素在固定容器中垂直居中
+且设置相应的图片 img{vertical-align:middle}
+*/
+.vertical-middle:after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    vertical-align: middle;
+}
+
+
+

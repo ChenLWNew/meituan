@@ -1,0 +1,572 @@
+/*----------------------------------------------------头部导航开始*/
+.headL ul li,.headR ul li{
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.headL ul li.collect:hover .icon-star-full{
+    color: orange;
+}
+    /*下拉菜单的展示*/
+.toggleli{
+    position: relative;
+}
+.togglea {
+    position: relative;
+    z-index:999;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    /*background-color: lightgreen;*/
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    padding-left:15px;
+    padding-right:15px;
+}
+.togglea .icon-phone{
+    position: absolute;
+    left: 0;
+    top:5px;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    background:url('../images/phone.png') center center no-repeat;
+    background-size: contain;
+    /*background-color: red;*/
+}
+.togglea .icon-tri{
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #666;
+    right:2px;
+    top: 12px;
+}
+.togglemenu{
+    position: absolute;
+    left: 0;
+    top: 28px;
+    z-index: 998;
+    display: none;
+    white-space: nowrap;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding:10px;
+    width: auto;
+}
+.togglemenu a{
+    display: block;
+}
+.togglemenu img{
+    display: block;
+}
+    /*
+    当鼠标悬停到下拉菜单的li标签时：(给toggleli添加on这个类)
+    1、改变下拉a标签的背景色，显示边框
+    2、把togglemenu显示出来
+    */
+.on .togglea {
+    background: #fff;
+    border-left: 2px solid #ddd;
+    border-right:2px solid #ddd;  /*由于移入和移出会有边框的突兀效果,就直接给togglea左右边框,移入移出时以边框颜色来切换*/
+}
+.on .togglea .icon-tri{
+    border-top-color: transparent;
+    border-bottom-color: #666;
+    top: 6px;
+}
+.on .togglemenu{
+    display: block;
+}
+    /*版心结束*/
+/*-------------------------------------------------------------------头部导航结束*/
+
+/*--------------------------------------------------------------------头部Logo开始*/
+.logo {
+    margin-top: 40px;
+}
+.logo .logoL{
+    width: 280px;
+    height: 70px;
+    /*background-color: pink;*/
+    float: left;
+}
+.logo .logoL img{
+    vertical-align: middle;
+}
+.logo .logoR{
+    width: 540px;
+    height: 70px;
+}
+.logo .logoR input[type="text"]{
+    width:450px;
+    height: 40px;
+    outline:none;   /*取消文本输入框input默认的获取焦点出现的轮廓线*/
+    border: 1px solid #13D1BE;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.logo .logoR button{
+    width: 89px;
+    height: 40px;
+    background-color: #13D1BE;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    font-size: 18px;
+    color: #fff;
+}
+.logo .logoR ul li{
+    float: left;
+    margin: 2px 5px;
+}
+/*------------------------------------------------------头部Logo结束*/
+
+/*------------------------------------------------------头部产品分类导航开始*/
+.nav {
+    height: 488px;
+    /*position: relative;*/
+    /*background-color: pink;*/
+}
+.nav .nav-bar{
+    height: 40px;
+    line-height: 40px;
+    /*background-color: #2bb8aa;*/
+    box-shadow: 0px 5px 10px #999;
+}
+.nav .nav-bar h2{
+    width: 245px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background-color:rgba(43,184,170,.9);
+}
+.nav .nav-bar ul.navigator li{
+    float: left;
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav .nav-bar ul.category{
+    width: 245px;
+    background-color: rgba(43,184,170,.8);
+}
+.nav .nav-bar ul.category li{
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+}
+.nav .nav-bar ul.category li a{
+    color: #fff;
+}
+.nav .nav-bar ul.category li:hover{
+    background-color: rgba(255,255,255,.3);
+}
+.nav .nav-bar ul.category li .icon-next{
+    display: inline-block;
+    float: right;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    padding-right: 5px;
+}
+.nav .nav-bar ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.nav .nav-bar ul.navigator li a:hover{
+    color: red;
+}
+    /*
+    当鼠标悬停到分类菜单的li标签时：(给categoryli添加on这个类) 显示二级菜单
+    */
+.category{
+    position: relative;
+}
+.categoryli .categorynext{
+    display: none;
+    position: absolute;
+    z-index: 4;
+    left: 245px;
+    top: 0;
+    width: 400px;
+    height: 448px;
+    background-color: #fff;
+}
+.categoryli .categorynext dl{
+    padding: 30px;
+}
+.categoryli .categorynext dl dt{
+    border-bottom: 1px solid #999;
+}
+
+.categoryli .categorynext dl dd{
+    float: left;
+    padding-right: 16px;
+}
+.category .categoryli .categorynext dl dt a:nth-child(1){
+    color: #000000;
+}
+.category .categoryli .categorynext dl dt a:nth-child(2){
+    color: #999;
+}
+.category .categoryli .categorynext dl dd a{
+    color: #999;
+    font-size: 14px;
+}
+.category .categoryli .categorynext dl dd a:hover{
+    color: #2bb8aa;
+}
+.categoryli:hover .categorynext{
+    display: block;
+}
+
+.nav .nav-lb{
+    height: 241px;
+    margin-left: 250px;
+    margin-top: 21px;
+}
+.nav .nav-lb>div{
+    float: left;
+    margin-right: 10px;
+}
+.nav .nav-lb .user{
+    width: 190px;
+    height: 241px;
+    /*background-color: pink;*/
+    padding: 40px 20px 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.nav .nav-lb .user .user-sign a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 1px solid #999;
+}
+    /*轮播图*/
+/*最外围的div*/
+#nav-carousel{
+    width: 550px;
+    height: 241px;
+    overflow: hidden;
+    position: relative;
+    /*margin-left: 250px;*/
+    /*margin-top: 21px;*/
+}
+/*包含所有图片的div*/
+#list{
+    width: 4200px; /*7张图片的宽度：7*550=3850*/
+    height: 241px;
+    position: absolute;
+    z-index:1;
+    left: -550px;
+    top: 0;
+}
+/*所有的图片<img>*/
+#list img{
+    float: left;
+}
+/*包含所有原点按钮的<div>*/
+#pointDiv{
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    z-index: 2;
+    bottom: 20px;
+    left: 250px;
+}
+/*所有的原点<span>*/
+#pointDiv span{
+    cursor: pointer;
+    float: left;
+    border: 1px solid #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333333;
+    margin-top: 5px;
+}
+/*第一个<span>*/
+#pointDiv .active{
+    background: orangered;
+}
+/*切换图标<a>*/
+.arrow{
+    cursor: pointer;
+    display: none;
+    line-height: 39px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    background-color: rgba(0,0,0,.3);
+    color: #fff;
+}
+#prev{
+    left: 0;
+}
+#next{
+    right: 0;
+}
+/*鼠标移到切换图标上时*/
+.arrow:hover{
+    background-color: rgba(0,0,0,.7);
+    text-decoration: none;
+    color: #fff;
+}
+/*鼠标移到整个div区域时*/
+#nav-carousel:hover .arrow{
+    display: block; /*显示*/
+}
+    /*轮播图结束*/
+.nav .nav-img{
+    margin-top: 21px;
+    margin-left: 250px;
+}
+.nav .nav-img a{
+    margin-right: 10px;
+    float: left;
+}
+.nav .nav-img .mtapp{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 190px;
+    height: 165px;
+    text-align: center;
+    /*background-color: blue;*/
+}
+.nav .nav-img .mtapp p.eat{
+    font-size: 12px;
+}
+.nav .nav-img .mtapp p.eat span{
+    color: orangered;
+}
+/*-------------------------------------------------------头部产品分类导航结束*/
+
+/*-------------------------------------------------------中间产品图文展示开始--*/
+/*产品头部*/
+.pro-title{
+    color:#fff;
+    height:45px;
+    line-height: 45px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.pro-title h3{
+    padding: 0 20px;
+}
+.pro-title ul{
+    position: relative;
+}
+    /*制造三角边*/
+.pro-title ul .ico-triout{
+    border: 6px solid transparent;
+    border-bottom-color:#C1AF8D;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 33px;
+}
+.pro-title ul .ico-triin{
+    border: 6px solid transparent;
+    border-bottom-color:#fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -6px;
+    top: -5px;
+}
+    /*制造三角边*/
+.pro-title ul li{
+    float: left;
+    height: 45px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+/*产品头部*/
+/*产品图文展示*/
+.quality .pro-content{
+    padding: 20px 0px 20px 22px;
+    border: 1px solid #C1AF8D;
+    border-top: none;
+    box-sizing: border-box;
+    display: none;
+}
+.quality .pro-content-All{
+    display: block;
+}
+.pro-content .pro-item{
+    float: left;
+    width: 382px;
+    cursor:pointer;
+    text-decoration: none;
+    color:#666;
+    margin-top: 10px;
+}
+.pro-content .pro-item .pro-img{
+    width: 369px;
+    height: 208px;
+    border-radius: 4px;
+}
+.pro-content .pro-item .pro-store{
+    margin-top:5px;
+    font-size: 16px;
+    color:#000;
+}
+.pro-content .pro-item .pro-description{
+    margin-top:8px;
+    font-size: 12px;
+}
+.pro-content .pro-item p.pro-price{
+    width: 369px;
+    margin-top: 15px;
+}
+.pro-content .pro-item p.pro-price .pro-priceNow{
+    font-size: 16px;
+    color:#BE9E4D;
+    padding-right: 10px;
+}
+.pro-content .pro-item p.pro-price .pro-pricePre{
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+    /*猫眼电影*/
+.movie {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.pro-title > a{
+    float: right;
+    color: #fff;
+    text-decoration: none;
+}
+.movie .pro-content{
+    margin-bottom: 20px;
+}
+#lb{
+    width: 2290px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.movie .pro-content a.pro-item{
+    display: inline-block;
+    width: 229px;
+}
+.movie .pro-content .pro-item img{
+    width: 214px;
+    height: 297px;
+}
+.movie .pro-content{
+    padding: 20px 0px 20px 23px;
+    border: 1px solid #F3B64A;
+    border-top: none;
+    box-sizing: border-box;
+}
+/*产品图文展示*/
+/*-------------------------------------------------------中间产品图文展示结束--*/
+
+
+/*-------------------------------------------------------底部链接导航开始*/
+.links ul.linknav{
+    height: 20px;
+    background-color: #f9f9f9;
+}
+.links ul.linknav li{
+    float: left;
+    width: 129px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-left: -1px;  /*由于我设置的是li的边框,导致两个li相邻的边框排在一起变成2px,我们可以使用margin-left负值来解决*/
+}
+.links .linkcontent{
+    display: none;
+    margin-top: -1px;
+    border: 1px solid #ddd;
+}
+.links .on{
+    display: block;
+}
+.links div a{
+    display:inline-block;
+    margin: 5px 10px; /*由于行内元素设置上下外边距无效所以要转为行内块元素*/
+}
+/*-------------------------------------------------------底部链接导航结束*/
+
+/*-------------------------------------------------------底部关于我们开始*/
+.about {
+    border-top: 1px solid #dddddd;
+    margin-top: 30px;
+    padding-left: 70px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.about dl{
+    width: 220px;
+    float: left;
+}
+.about dl dd,.about dl dt{
+    line-height: 24px;
+}
+.about dl a{
+    font-size: 12px;
+    text-decoration: none;
+}
+/*-------------------------------------------------------底部关于我们结束*/
+/*-------------------------------------------------------底部版权信息开始*/
+.copyright {
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 12px;
+    color: #999;
+}
+.copyright p{
+    height: 20px;
+    line-height: 20px;
+}
+.copyright a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #999;
+}
+.copyright a:hover{
+    color: #13D1BE;
+}
+.copyright .copyrightR .ico-record{
+    display: inline-block;
+    width: 109px;
+    height: 38px;
+    background: url('../images/coryright-sprite.png') 0 -166px no-repeat;
+}
+.copyright .copyrightR .ico-knet{
+    display: inline-block;
+    width: 107px;
+    height: 38px;
+    background: url('../images/coryright-sprite.png') 0 -127px no-repeat;
+}
+.copyright .copyrightR .ico-12315{
+    display: inline-block;
+    width: 107px;
+    height: 38px;
+    background: url('../images/coryright-sprite.png') 0 -40px no-repeat;
+}
+/*-------------------------------------------------------底部版权信息结束*/

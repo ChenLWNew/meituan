@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>美团外卖</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="美团网精选美食餐厅,酒店预订,电影票,旅游景点,外卖订餐,团购信息,您可查询商家评价店铺信息。下载美团官方APP ,吃喝玩乐1折起。">
+    <meta name="keywords" content="美食,酒店,团购">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/style.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+<!--
+头部导航开始：头部区域通栏,版心区域固定
+1、全屏宽度，高度30px,背景色#f9f9f9
+2、版心分成左右两块
+3、左右列表用div>ul>li>a
+-->
+<div class="header fluid">
+    <div class="cen1170 clearfix">
+        <div class="headL fl">
+            <ul class="clearfix">
+                <li class="collect toggleli"><a class="togglea" href="javascript:;"><i class="icon-star-full"></i>收藏美团</a></li>
+                <li class="toggleli"><a class="togglea" href="javascript:;">登录</a></li>
+                <li class="toggleli"><a class="togglea" href="javascript:;">注册</a></li>
+                <li id="phoneLi" class="toggleli">
+                    <a class="togglea" class="togglea" href="javascript:;">
+                        <i class="icon-phone"></i>手机美团<i class="icon-tri"></i>
+                    </a>
+                    <div class="togglemenu">
+                        <div>
+                            <a href="javascript:;">下载手机版美团</a>
+                            <img src="./images/weixin1.png" alt="">
+                        </div>
+                        <div>
+                            <a href="javascript:;">下载手机版猫眼电影</a>
+                            <img src="./images/weixin2.png" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="headR fr">
+            <ul class="clearfix">
+                <li class="toggleli">
+                    <a class="togglea" href="javascript:;">我的订单<i class="icon-tri"></i></a>
+                </li>
+                <li id="userLi" class="toggleli">
+                    <a class="togglea" href="javascript:;">我的美团<i class="icon-tri"></i></a>
+                    <div class="togglemenu">
+                        <ul>
+                            <li><a href="javascript:;">我的评价</a></li>
+                            <li><a href="javascript:;">我的收藏</a></li>
+                            <li><a href="javascript:;">我的积分</a></li>
+                            <li><a href="javascript:;">抵用券</a></li>
+                            <li><a href="javascript:;">余额</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li  class="toggleli"><a class="togglea" href="javascript:;">最近浏览</a></li>
+                <li  class="toggleli"><a class="togglea" href="javascript:;">购物车0件</a></li>
+                <li  class="toggleli"><a class="togglea" href="javascript:;">联系客服</a></li>
+                <li  class="toggleli"><a class="togglea" href="javascript:;">我是商家</a></li>
+                <li  class="toggleli"><a class="togglea" href="javascript:;">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--头部导航结束-->
+<!--头部logo栏开始-->
+<div class="logo cen1170 clearfix">
+    <div class="logoL fl vertical-middle">
+        <img src="./images/logo.png" width="126px" alt="美团logo">
+    </div>
+    <div class="logoR fl">
+        <form action="">
+            <input id="search" type="text" placeholder="搜索商家或地点"><button><i class="icon-search"></i></button>
+        </form>
+        <ul>
+            <li><a href="javascript:;">南京总统府</a></li>
+            <li><a href="javascript:;">汤山一号温泉</a></li>
+            <li><a href="javascript:;">紫清湖温泉</a></li>
+            <li><a href="javascript:;">南京银杏湖乐园</a></li>
+            <li><a href="javascript:;">马群花园城</a></li>
+            <li><a href="javascript:;">南京园博园</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部logo栏结束-->
+<!--头部产品分类导航开始-->
+<div class="nav cen1170">
+    <div class="nav-bar">
+        <!--产品分类开始-->
+        <div class="fl">
+            <h2>全部分类</h2>
+            <ul class="category">
+                <li class="categoryli">
+                    <a href="javascript:;">美食</a><i class="icon-next">></i>
+                    <div class="categorynext">
+                        <dl>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">美食</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">代金券</a></dd>
+                            <dd><a href="javascript:;">甜点</a></dd>
+                            <dd><a href="javascript:;">饮品</a></dd>
+                            <dd><a href="javascript:;">火锅</a></dd>
+                            <dd><a href="javascript:;">自助餐</a></dd>
+                            <dd><a href="javascript:;">小吃</a></dd>
+                            <dd><a href="javascript:;">快餐</a></dd>
+                            <dd><a href="javascript:;">日韩料理</a></dd>
+                            <dd><a href="javascript:;">西餐</a></dd>
+                            <dd><a href="javascript:;">聚餐</a></dd>
+                            <dd><a href="javascript:;">烤烤</a></dd>
+                            <dd><a href="javascript:;">东北菜</a></dd>
+                            <dd><a href="javascript:;">东南亚菜</a></dd>
+                            <dd><a href="javascript:;">咖啡</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">外卖</a><i class="icon-next">></i>
+                    <div class="categorynext">
+                        <dl>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">外卖</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">美团外卖</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">酒店</a><i class="icon-next">></i>
+                    <div class="categorynext">
+                        <dl>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">酒店星级</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">经济型</a></dd>
+                            <dd><a href="javascript:;">舒适/三星</a></dd>
+                            <dd><a href="javascript:;">高档/四星</a></dd>
+                            <dd><a href="javascript:;">豪华/五星</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">榛果民宿</a><i class="icon-next">></i>
+                    <div class="categorynext">
+                        <dl>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">热门城市</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">上海</a></dd>
+                            <dd><a href="javascript:;">成都</a></dd>
+                            <dd><a href="javascript:;">南京</a></dd>
+                            <dd><a href="javascript:;">广州</a></dd>
+                            <dd><a href="javascript:;">大连</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">猫眼电影</a><i class="icon-next">></i>
+                    <div class="categorynext">
+                        <dl>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">热映电影</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">地球最后的夜晚</a></dd>
+                            <dd><a href="javascript:;">来电狂响</a></dd>
+                            <dd><a href="javascript:;">大黄蜂</a></dd>
+                            <dd><a href="javascript:;">蜘蛛侠：平行宇宙</a></dd>
+                            <dd><a href="javascript:;">海王</a></dd>
+                            <dd><a href="javascript:;">云南虫谷</a></dd>
+                            <dd><a href="javascript:;">断片之险途夺宝</a></dd>
+                            <dd><a href="javascript:;">奎迪：英雄再起</a></dd>
+                            <dd><a href="javascript:;">印度暴徒</a></dd>
+                            <dd><a href="javascript:;">龙猫</a></dd>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">热门影院</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">幸福蓝海国际影城</a></dd>
+                            <dd><a href="javascript:;">万达影城</a></dd>
+                            <dd><a href="javascript:;">卢米埃影城</a></dd>
+                            <dd><a href="javascript:;">金逸影城</a></dd>
+                            <dd><a href="javascript:;">中影国际影城</a></dd>
+                            <dd><a href="javascript:;">横店电影城</a></dd>
+                            <dd><a href="javascript:;">星美国际影城</a></dd>
+                            <dd><a href="javascript:;">海上国际影城</a></dd>
+                            <dd><a href="javascript:;">耀莱成龙国际影城</a></dd>
+                            <dd><a href="javascript:;">UME国际影城</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">机票 / 火车票</a><i class="icon-next">></i>
+                    <div class="categorynext">
+                        <dl>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">机票</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">国内机票</a></dd>
+                            <dd><a href="javascript:;">国际/港澳台机票</a></dd>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">火车票</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">火车票</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">休闲娱乐 / KTV</a><i class="icon-next">></i>
+                    <div class="categorynext">
+                        <dl>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">休闲娱乐</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">足疗</a></dd>
+                            <dd><a href="javascript:;">按摩</a></dd>
+                            <dd><a href="javascript:;">洗浴/汗蒸</a></dd>
+                            <dd><a href="javascript:;">酒吧</a></dd>
+                            <dd><a href="javascript:;">密室逃脱</a></dd>
+                            <dt class="clearfix">
+                                <a class="fl f16" href="javascript:;">KTV</a>
+                                <a class="fr" href="javascript:;">更多></a>
+                            </dt>
+                            <dd><a href="javascript:;">KTV</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">生活服务</a><i class="icon-next">></i>
+                </li>
+                <li class="category">
+                    <a href="javascript:;">丽人 / 美发 / 医学美容</a><i class="icon-next">></i>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">结婚 / 婚纱摄影 / 婚宴</a><i class="icon-next">></i>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">亲子 / 儿童乐园 / 幼教</a><i class="icon-next">></i>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">运动健身 / 健身中心</a><i class="icon-next">></i>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">家教 / 建材 / 家居</a><i class="icon-next">></i>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">学习培训 / 音乐培训</a><i class="icon-next">></i>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">医疗健康 / 宠物 / 爱车</a><i class="icon-next">></i>
+                </li>
+                <li class="categoryli">
+                    <a href="javascript:;">酒吧 / 密室逃脱</a><i class="icon-next">></i>
+                </li>
+            </ul>
+        </div>
+        <!--产品分类结束-->
+        <ul class="fl navigator">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">今日新单</a></li>
+            <li><a href="javascript:;">购物</a></li>
+            <li><a href="javascript:;">身边外卖</a></li>
+            <li><a href="javascript:;">名店抢购</a></li>
+        </ul>
+    </div>
+    <!--产品轮播开始-->
+    <div class="nav-lb">
+        <div id="nav-carousel">
+        <div id="list">
+            <a href="javascript:;"><img src="./images/banner5.png" alt="5" width="550x"></a>
+            <a href="javascript:;"><img src="./images/banner1.jpg" alt="1" width="550x"></a>
+            <a href="javascript:;"><img src="./images/banner2.jpg" alt="2" width="550x"></a>
+            <a href="javascript:;"><img src="./images/banner3.png" alt="3" width="550x"></a>
+            <a href="javascript:;"><img src="./images/banner4.jpg" alt="4" width="550x"></a>
+            <a href="javascript:;"><img src="./images/banner5.png" alt="5" width="550x"></a>
+            <a href="javascript:;"><img src="./images/banner1.jpg" alt="1" width="550x"></a>
+        </div>
+        <div id="pointDiv">
+            <span index="1" class="active"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+            <span index="4"></span>
+            <span index="5"></span>
+        </div>
+        <a href="javascript:;" id="prev" class="arrow"><</a>
+        <a href="javascript:;" id="next" class="arrow">></a>
+    </div>
+        <div class="banner-entertainmen">
+            <a href="javascript:;"><img src="./images/banner-entertainment.jpg" alt="休闲娱乐" height="241"></a>
+        </div>
+        <div class="user">
+            <div class="user-avatar">
+                <img src="./images/user-avatar.jpg" alt="头像" width="47">
+                <p>Hi！你好</p>
+            </div>
+            <div class="user-sign">
+                <a href="javascript:;">注册</a>
+                <a href="javascript:;">登录</a>
+            </div>
+        </div>
+    </div>
+    <!--产品轮播结束-->
+    <div class="nav-img">
+        <a href="javascript:;"><img src="./images/banner-hotel.png" alt="住酒店" height="165"></a>
+        <a href="javascript:;"><img src="./images/banner-leaning.jpg" alt="培训学习" height="165"></a>
+        <a href="javascript:;"><img src="./images/banner-business.jpg" alt="商务" height="165"></a>
+        <div class="mtapp fl">
+            <img src="./images/weixin1.png" alt="美团手机app" width="75">
+            <p>美团APP手机版</p>
+            <p class="eat"><span>1元起</span> 吃喝玩乐</p>
+        </div>
+    </div>
+</div>
+<!--头部产品分类导航结束-->
+<!--中间产品图文展示开始-->
+<div class="product cen1170">
+    <!--有格调的产品开始-->
+    <div class="quality">
+        <!--产品头部开始-->
+        <div class="pro-title bg-orangegray clearfix">
+            <h3 class="fl">有格调</h3>
+            <ul class="fl clearfix">
+                <!--制作三角边-->
+                <i class="ico-triout">
+                    <i class="ico-triin"></i>
+                </i>
+                <li>全部</li>
+                <li>约会聚餐</li>
+                <li>丽人SPA</li>
+                <li>电影演出</li>
+                <li>品质出游</li>
+            </ul>
+        </div>
+        <!--产品头部结束-->
+        <!--产品内容开始-->
+            <!--全部产品图文-->
+        <div class="pro-content pro-content-All clearfix">
+            <a class="pro-item">
+                <img src="./images/pro-all1.jpg" class="pro-img" alt="">
+                <p class="pro-store">绿地洲际酒店·粤翠轩</p>
+                <p class="pro-description">工作日点心自助</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥138</i>
+                        <i class="pro-pricePre">门市价¥181</i>
+                    </span>
+                    <span class="fr">鼓楼广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-all2.jpg" class="pro-img" alt="">
+                <p class="pro-store">绿地洲际酒店·地平线全日餐厅</p>
+                <p class="pro-description">周末自助午餐</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥198</i>
+                        <i class="pro-pricePre">门市价¥269</i>
+                    </span>
+                    <span class="fr">珠江路</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-all3.jpg" class="pro-img" alt="">
+                <p class="pro-store">冠生园（珠江路店）</p>
+                <p class="pro-description">汽车总动员1个，约8英寸，圆形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥134</i>
+                        <i class="pro-pricePre">门市价¥168</i>
+                    </span>
+                    <span class="fr">珠江路</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-all4.jpg" class="pro-img" alt="">
+                <p class="pro-store">Hermit Beer & Kitchen</p>
+                <p class="pro-description">双人温馨套餐1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥285</i>
+                        <i class="pro-pricePre">门市价¥376</i>
+                    </span>
+                    <span class="fr">山西路/湖南路</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-all5.jpg" class="pro-img" alt="">
+                <p class="pro-store">奶酪时光休闲主题餐厅（高楼门店）</p>
+                <p class="pro-description">双人特色套餐B，提供免费WiFi</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥136</i>
+                        <i class="pro-pricePre">门市价¥275</i>
+                    </span>
+                    <span class="fr">高楼门</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-all6.jpg" class="pro-img" alt="">
+                <p class="pro-store">幸福朝食部</p>
+                <p class="pro-description">浮云卷整条1个，约0英寸，条形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+        </div>
+            <!--约会聚餐产品图文-->
+        <div class="pro-content pro-content-appointment clearfix">
+            <a class="pro-item">
+                <img src="./images/pro-appointment1.jpg" class="pro-img" alt="">
+                <p class="pro-store">榴芒兔水果千层蛋糕（新街口店）</p>
+                <p class="pro-description">6英寸榴莲芒果千层光头强1个，约6英寸，圆形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥128</i>
+                        <i class="pro-pricePre">门市价¥148</i>
+                    </span>
+                    <span class="fr">新街口/德基广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-appointment2.jpg" class="pro-img" alt="">
+                <p class="pro-store">绿地洲际酒店·粤翠轩</p>
+                <p class="pro-description">单人点心自助</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥158</i>
+                        <i class="pro-pricePre">门市价¥181.7</i>
+                    </span>
+                    <span class="fr">鼓楼广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-appointment3.jpg" class="pro-img" alt="">
+                <p class="pro-store">江边锦城重庆火椒鱼（新世界百货店）</p>
+                <p class="pro-description">青花椒无刺鱼1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥118</i>
+                        <i class="pro-pricePre">门市价¥168</i>
+                    </span>
+                    <span class="fr">新街口/金轮/五台山体育中心</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-all4.jpg" class="pro-img" alt="">
+                <p class="pro-store">幸福朝食部</p>
+                <p class="pro-description">浮云卷整条1个，约0英寸，条形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-all5.jpg" class="pro-img" alt="">
+                <p class="pro-store">乐百丽·榴莲比萨专门店（荔枝广场店）</p>
+                <p class="pro-description">儿童套餐1份，包间免费</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥29</i>
+                        <i class="pro-pricePre">门市价¥64</i>
+                    </span>
+                    <span class="fr">丹凤街</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-all6.jpg" class="pro-img" alt="">
+                <p class="pro-store">余欢领鲜火锅（紫峰店）</p>
+                <p class="pro-description">年夜饭双人温馨套餐1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+        </div>
+            <!--丽人SPA产品图文-->
+        <div class="pro-content pro-content-SPA clearfix">
+            <a class="pro-item">
+                <img src="./images/pro-SPA1.jpg" class="pro-img" alt="">
+                <p class="pro-store">榴芒兔水果千层蛋糕（新街口店）</p>
+                <p class="pro-description">6英寸榴莲芒果千层光头强1个，约6英寸，圆形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥128</i>
+                        <i class="pro-pricePre">门市价¥148</i>
+                    </span>
+                    <span class="fr">新街口/德基广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-SPA2.jpg" class="pro-img" alt="">
+                <p class="pro-store">绿地洲际酒店·粤翠轩</p>
+                <p class="pro-description">单人点心自助</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥158</i>
+                        <i class="pro-pricePre">门市价¥181.7</i>
+                    </span>
+                    <span class="fr">鼓楼广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-SPA3.jpg" class="pro-img" alt="">
+                <p class="pro-store">江边锦城重庆火椒鱼（新世界百货店）</p>
+                <p class="pro-description">青花椒无刺鱼1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥118</i>
+                        <i class="pro-pricePre">门市价¥168</i>
+                    </span>
+                    <span class="fr">新街口/金轮/五台山体育中心</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-SPA4.jpg" class="pro-img" alt="">
+                <p class="pro-store">幸福朝食部</p>
+                <p class="pro-description">浮云卷整条1个，约0英寸，条形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-SPA5.jpg" class="pro-img" alt="">
+                <p class="pro-store">乐百丽·榴莲比萨专门店（荔枝广场店）</p>
+                <p class="pro-description">儿童套餐1份，包间免费</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥29</i>
+                        <i class="pro-pricePre">门市价¥64</i>
+                    </span>
+                    <span class="fr">丹凤街</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-SPA6.jpg" class="pro-img" alt="">
+                <p class="pro-store">余欢领鲜火锅（紫峰店）</p>
+                <p class="pro-description">年夜饭双人温馨套餐1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+        </div>
+            <!--电影产品图文-->
+        <div class="pro-content pro-content-cinema clearfix">
+            <a class="pro-item">
+                <img src="./images/pro-cinema1.jpg" class="pro-img" alt="">
+                <p class="pro-store">榴芒兔水果千层蛋糕（新街口店）</p>
+                <p class="pro-description">6英寸榴莲芒果千层光头强1个，约6英寸，圆形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥128</i>
+                        <i class="pro-pricePre">门市价¥148</i>
+                    </span>
+                    <span class="fr">新街口/德基广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-cinema2.jpg" class="pro-img" alt="">
+                <p class="pro-store">绿地洲际酒店·粤翠轩</p>
+                <p class="pro-description">单人点心自助</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥158</i>
+                        <i class="pro-pricePre">门市价¥181.7</i>
+                    </span>
+                    <span class="fr">鼓楼广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-cinema3.jpg" class="pro-img" alt="">
+                <p class="pro-store">江边锦城重庆火椒鱼（新世界百货店）</p>
+                <p class="pro-description">青花椒无刺鱼1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥118</i>
+                        <i class="pro-pricePre">门市价¥168</i>
+                    </span>
+                    <span class="fr">新街口/金轮/五台山体育中心</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-cinema4.jpg" class="pro-img" alt="">
+                <p class="pro-store">幸福朝食部</p>
+                <p class="pro-description">浮云卷整条1个，约0英寸，条形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-cinema5.jpg" class="pro-img" alt="">
+                <p class="pro-store">乐百丽·榴莲比萨专门店（荔枝广场店）</p>
+                <p class="pro-description">儿童套餐1份，包间免费</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥29</i>
+                        <i class="pro-pricePre">门市价¥64</i>
+                    </span>
+                    <span class="fr">丹凤街</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-cinema6.jpg" class="pro-img" alt="">
+                <p class="pro-store">余欢领鲜火锅（紫峰店）</p>
+                <p class="pro-description">年夜饭双人温馨套餐1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+        </div>
+            <!--旅游产品图文-->
+        <div class="pro-content pro-content-travel clearfix">
+            <a class="pro-item">
+                <img src="./images/pro-travel1.jpg" class="pro-img" alt="">
+                <p class="pro-store">榴芒兔水果千层蛋糕（新街口店）</p>
+                <p class="pro-description">6英寸榴莲芒果千层光头强1个，约6英寸，圆形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥128</i>
+                        <i class="pro-pricePre">门市价¥148</i>
+                    </span>
+                    <span class="fr">新街口/德基广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-travel2.jpg" class="pro-img" alt="">
+                <p class="pro-store">绿地洲际酒店·粤翠轩</p>
+                <p class="pro-description">单人点心自助</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥158</i>
+                        <i class="pro-pricePre">门市价¥181.7</i>
+                    </span>
+                    <span class="fr">鼓楼广场</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-travel3.png" class="pro-img" alt="">
+                <p class="pro-store">江边锦城重庆火椒鱼（新世界百货店）</p>
+                <p class="pro-description">青花椒无刺鱼1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥118</i>
+                        <i class="pro-pricePre">门市价¥168</i>
+                    </span>
+                    <span class="fr">新街口/金轮/五台山体育中心</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-travel4.jpg" class="pro-img" alt="">
+                <p class="pro-store">幸福朝食部</p>
+                <p class="pro-description">浮云卷整条1个，约0英寸，条形</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-travel5.jpg" class="pro-img" alt="">
+                <p class="pro-store">乐百丽·榴莲比萨专门店（荔枝广场店）</p>
+                <p class="pro-description">儿童套餐1份，包间免费</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥29</i>
+                        <i class="pro-pricePre">门市价¥64</i>
+                    </span>
+                    <span class="fr">丹凤街</span>
+                </p>
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-travel6.jpg" class="pro-img" alt="">
+                <p class="pro-store">余欢领鲜火锅（紫峰店）</p>
+                <p class="pro-description">年夜饭双人温馨套餐1份</p>
+                <p class="pro-price">
+                    <span class="fl">
+                        <i class="pro-priceNow">¥178</i>
+                        <i class="pro-pricePre">门市价¥210</i>
+                    </span>
+                    <span class="fr">北门桥</span>
+                </p>
+            </a>
+        </div>
+        <!--产品内容结束-->
+    </div>
+    <!--有格调的产品结束-->
+    <!--猫眼电影开始-->
+    <div class="movie">
+        <div class="pro-title bg-silverorange clearfix">
+            <h3 class="fl">猫眼电影</h3>
+            <ul class="fl clearfix">
+                <!--制作三角边-->
+                <i class="ico-triout">
+                    <i class="ico-triin"></i>
+                </i>
+                <li>正在热映</li>
+                <li>即将上映</li>
+            </ul>
+            <a href="javascript:;">更多 ></a>
+        </div>
+        <div class="pro-content pro-content-now clearfix">
+            <a class="pro-item">
+                <img src="./images/pro-movie1.jpg" class="pro-img" alt="">
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-movie2.jpg" class="pro-img" alt="">
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-movie3.jpg" class="pro-img" alt="">
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-movie4.jpg" class="pro-img" alt="">
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-movie5.jpg" class="pro-img" alt="">
+            </a>
+        </div>
+        <div style="display: none" class="pro-content pro-content-future clearfix">
+            <a class="pro-item">
+                <img src="./images/pro-movie6.jpg" class="pro-img" alt="">
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-movie7.jpg" class="pro-img" alt="">
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-movie8.jpg" class="pro-img" alt="">
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-movie9.jpg" class="pro-img" alt="">
+            </a>
+            <a class="pro-item">
+                <img src="./images/pro-movie10.jpg" class="pro-img" alt="">
+            </a>
+        </div>
+    </div>
+    <!--猫眼电影结束-->
+</div>
+<!--中间产品图文展示结束-->
+<!--底部链接导航开始-->
+<div class="links cen1170">
+    <ul class="linknav clearfix" id="linknav">
+        <li><a class="navatitle" href="javascript:;">团购分类</a></li>
+        <li><a class="navatitle" href="javascript:;">热门地标</a></li>
+        <li><a class="navatitle" href="javascript:;">热门酒店</a></li>
+        <li><a class="navatitle" href="javascript:;">热门团购</a></li>
+        <li><a class="navatitle" href="javascript:;">精品团购</a></li>
+        <li><a class="navatitle" href="javascript:;">热门城市</a></li>
+        <li><a class="navatitle" href="javascript:;">周边城市</a></li>
+        <li><a class="navatitle" href="javascript:;">美团推荐</a></li>
+        <li><a class="navatitle" href="javascript:;">品牌推荐</a></li>
+    </ul>
+    <div class="linkcontent on">
+        <a href="javascript:;">美食团购</a>
+        <a href="javascript:;">电影团购</a>
+        <a href="javascript:;">休闲娱乐团购</a>
+        <a href="javascript:;">旅游团购</a>
+        <a href="javascript:;">生活服务团购</a>
+        <a href="javascript:;">购物团购</a>
+        <a href="javascript:;">丽人团购</a>
+        <a href="javascript:;">团购评论</a>
+        <a href="javascript:;">品牌团购</a>
+        <a href="javascript:;">专题团购</a>
+        <a href="javascript:;">美团团购</a>
+    </div>
+    <div class="linkcontent">
+        <a href="javascript:;">新街口</a>
+        <a href="javascript:;">东山镇</a>
+        <a href="javascript:;">苜蓿园</a>
+        <a href="javascript:;">湖南路</a>
+        <a href="javascript:;">夫子庙</a>
+        <a href="javascript:;">马群街道</a>
+        <a href="javascript:;">江宁大学城</a>
+        <a href="javascript:;">白马公园</a>
+        <a href="javascript:;">朝天宫</a>
+        <a href="javascript:;">江宁金鹰</a>
+        <a href="javascript:;">众彩市场</a>
+        <a href="javascript:;">禄口机场</a>
+        <a href="javascript:;">将军大道沿线</a>
+        <a href="javascript:;">托乐嘉</a>
+    </div>
+    <div class="linkcontent">
+        <a href="javascript:;">速8酒店(南京中山陵景区西店)</a>
+        <a href="javascript:;">易佰连锁旅店(南京夫子庙地铁站建康路店)</a>
+        <a href="javascript:;">Zsmart智尚酒店(南京夫子庙店)</a>
+        <a href="javascript:;">肯定精选酒店(新街口常府街地铁站店) </a>
+        <a href="javascript:;">悦尚宾馆(军区总院南航大学夫子庙店) </a>
+        <a href="javascript:;">易佰良品酒店(南京南站店) </a>
+    </div>
+    <div class="linkcontent">
+        <a href="javascript:;">美食团购4</a>
+        <a href="javascript:;">电影团购</a>
+        <a href="javascript:;">休闲娱乐团购</a>
+        <a href="javascript:;">旅游团购</a>
+        <a href="javascript:;">生活服务团购</a>
+        <a href="javascript:;">购物团购</a>
+        <a href="javascript:;">丽人团购</a>
+        <a href="javascript:;">团购评论</a>
+        <a href="javascript:;">品牌团购</a>
+        <a href="javascript:;">专题团购</a>
+        <a href="javascript:;">美团团购</a>
+    </div>
+    <div class="linkcontent">
+        <a href="javascript:;">美食团购5</a>
+        <a href="javascript:;">电影团购</a>
+        <a href="javascript:;">休闲娱乐团购</a>
+        <a href="javascript:;">旅游团购</a>
+        <a href="javascript:;">生活服务团购</a>
+        <a href="javascript:;">购物团购</a>
+        <a href="javascript:;">丽人团购</a>
+        <a href="javascript:;">团购评论</a>
+        <a href="javascript:;">品牌团购</a>
+        <a href="javascript:;">专题团购</a>
+        <a href="javascript:;">美团团购</a>
+    </div>
+    <div class="linkcontent">
+        <a href="javascript:;">美食团购6</a>
+        <a href="javascript:;">电影团购</a>
+        <a href="javascript:;">休闲娱乐团购</a>
+        <a href="javascript:;">旅游团购</a>
+        <a href="javascript:;">生活服务团购</a>
+        <a href="javascript:;">购物团购</a>
+        <a href="javascript:;">丽人团购</a>
+        <a href="javascript:;">团购评论</a>
+        <a href="javascript:;">品牌团购</a>
+        <a href="javascript:;">专题团购</a>
+        <a href="javascript:;">美团团购</a>
+    </div>
+    <div class="linkcontent">
+        <a href="javascript:;">美食团购7</a>
+        <a href="javascript:;">电影团购</a>
+        <a href="javascript:;">休闲娱乐团购</a>
+        <a href="javascript:;">旅游团购</a>
+        <a href="javascript:;">生活服务团购</a>
+        <a href="javascript:;">购物团购</a>
+        <a href="javascript:;">丽人团购</a>
+        <a href="javascript:;">团购评论</a>
+        <a href="javascript:;">品牌团购</a>
+        <a href="javascript:;">专题团购</a>
+        <a href="javascript:;">美团团购</a>
+    </div>
+    <div class="linkcontent">
+        <a href="javascript:;">美食团购8</a>
+        <a href="javascript:;">电影团购</a>
+        <a href="javascript:;">休闲娱乐团购</a>
+        <a href="javascript:;">旅游团购</a>
+        <a href="javascript:;">生活服务团购</a>
+        <a href="javascript:;">购物团购</a>
+        <a href="javascript:;">丽人团购</a>
+        <a href="javascript:;">团购评论</a>
+        <a href="javascript:;">品牌团购</a>
+        <a href="javascript:;">专题团购</a>
+        <a href="javascript:;">美团团购</a>
+    </div>
+    <div class="linkcontent">
+        <a href="javascript:;">美食团购9</a>
+        <a href="javascript:;">电影团购</a>
+        <a href="javascript:;">休闲娱乐团购</a>
+        <a href="javascript:;">旅游团购</a>
+        <a href="javascript:;">生活服务团购</a>
+        <a href="javascript:;">购物团购</a>
+        <a href="javascript:;">丽人团购</a>
+        <a href="javascript:;">团购评论</a>
+        <a href="javascript:;">品牌团购</a>
+        <a href="javascript:;">专题团购</a>
+        <a href="javascript:;">美团团购</a>
+    </div>
+</div>
+<!--底部链接导航结束-->
+<!--底部关于我们开始-->
+<div class="about cen1170 clearfix">
+    <dl>
+        <dt><a href="javascript:;">用户帮助</a></dt>
+        <dd><a href="javascript:;">申请退款</a></dd>
+        <dd><a href="javascript:;">查看美团券密码</a></dd>
+        <dd><a href="javascript:;">常见问题</a></dd>
+        <dd><a href="javascript:;">用户协议</a></dd>
+        <dd><a href="javascript:;">隐私政策</a></dd>
+        <dd><a href="javascript:;">反诈骗公告</a></dd>
+        <dd><a href="javascript:;">美团服务</a></dd>
+        <dd><a href="javascript:;">美团外卖</a></dd>
+        <dd><a href="javascript:;">美团酒店</a></dd>
+        <dd><a href="javascript:;">猫眼电影</a></dd>
+        <dd><a href="javascript:;">美团配送</a></dd>
+        <dd><a href="javascript:;">美团云</a></dd>
+        <dd><a href="javascript:;">大众点评</a></dd>
+        <dd><a href="javascript:;">榛果民宿</a></dd>
+        <dd><a href="javascript:;">无人配送</a></dd>
+    </dl>
+    <dl>
+        <dt><a href="javascript:;">商家合作</a></dt>
+        <dd><a href="javascript:;">美食商家入驻(非外卖)</a></dd>
+        <dd><a href="javascript:;">美团外卖开店申请</a></dd>
+        <dd><a href="javascript:;">美团收银官网</a></dd>
+        <dd><a href="javascript:;">外卖配送加盟申请</a></dd>
+        <dd><a href="javascript:;">美团点评餐饮学院</a></dd>
+        <dd><a href="javascript:;">酒店商家入驻</a></dd>
+        <dd><a href="javascript:;">境内度假商家入驻</a></dd>
+        <dd><a href="javascript:;">综合商家入驻</a></dd>
+        <dd><a href="javascript:;">榛果民宿房东商家入驻</a></dd>
+        <dd><a href="javascript:;">商家开票申请</a></dd>
+        <dd><a href="javascript:;">美团点评智能收银机</a></dd>
+        <dd><a href="javascript:;">聚宝盆餐饮开放平台</a></dd>
+        <dd><a href="javascript:;">美团智能支付</a></dd>
+        <dd><a href="javascript:;">免费使用美团排队</a></dd>
+        <dd><a href="javascript:;">快驴进货商家合作</a></dd>
+        <dd><a href="javascript:;">美团闪购商家入驻</a></dd>
+    </dl>
+    <dl>
+        <dt><a href="javascript:;">代理商加盟</a></dt>
+        <dd><a href="javascript:;">智能支付渠道加盟商招募</a></dd>
+        <dd><a href="javascript:;">到店餐饮代理商招募</a></dd>
+        <dd><a href="javascript:;">非餐饮代理商招募</a></dd>
+        <dd><a href="javascript:;">美团联盟</a></dd>
+        <dd><a href="javascript:;">美团收银招募线上分销商</a></dd>
+        <dd><a href="javascript:;">美团点评5S服务商招募</a></dd>
+        <dd><a href="javascript:;">行业规范</a></dd>
+        <dd><a href="javascript:;">美团点评餐饮安全管理办法</a></dd>
+        <dd><a href="javascript:;">廉正举报</a></dd>
+        <dd><a href="javascript:;">廉政邮箱</a></dd>
+    </dl>
+    <dl>
+        <dt><a href="javascript:;">关注美团</a></dt>
+        <dd><a href="javascript:;">美团新浪微博</a></dd>
+        <dd><a href="javascript:;">公司信息</a></dd>
+        <dd><a href="javascript:;">关于我们</a></dd>
+        <dd><a href="javascript:;">投资者关系</a></dd>
+        <dd><a href="javascript:;">加入我们</a></dd>
+        <dd><a href="javascript:;">法律声明</a></dd>
+        <dd><a href="javascript:;">价格说明</a></dd>
+        <dd><a href="javascript:;">美团网平台点评规则</a></dd>
+        <dd><a href="javascript:;">美团点评团购用户服务条款</a></dd>
+        <dd><a href="javascript:;">商户诚信公约及管理办法</a></dd>
+    </dl>
+    <dl>
+        <dt><a href="javascript:;">消费者服务热线</a></dt>
+        <dd><a href="javascript:;">外卖消费者：10109777</a></dd>
+        <dd><a href="javascript:;">猫眼消费者：10105335</a></dd>
+        <dd><a href="javascript:;">其他消费者：10107888</a></dd>
+        <dd><a href="javascript:;">商家服务热线</a></dd>
+        <dd><a href="javascript:;">外卖&餐饮商家：10105557</a></dd>
+        <dd><a href="javascript:;">休闲娱乐、丽人、ktv、教育、结婚、亲子、家装等商家：10100107</a></dd>
+        <dd><a href="javascript:;">投诉举报热线</a></dd>
+        <dd><a href="javascript:;">违法和不良信息举报电话：4006018900</a></dd>
+        <dd><a href="javascript:;">举报邮箱：tousujubao@meituan.com</a></dd>
+    </dl>
+</div>
+<!--底部关于我们结束-->
+<!--底部版权信息开始-->
+<div class="copyright cen1170 clearfix">
+    <div class="copyrightL fl">
+        <p>
+            &copy;美团网团购 meituan.com
+            <a class="ml10" href="javascript:;">京ICP证070791号</a>
+            <a class="ml10" href="javascript:;">京ICP备10211739号</a>
+        </p>
+        <p><a href="javascript:;">广播电视节目制作经营许可证（京）字第03889号</a></p>
+        <p>
+            <a href="javascript:;">食品经营许可证</a>
+            <a class="ml10" href="javascript:;">互联网药品信息服务资格证</a>
+        </p>
+        <p>医疗器械网络交易服务第三方平台备案：（京）网械平台备字[2018]第00004号</p>
+    </div>
+    <div class="copyrightR fr">
+        <p class="t-alignR"><a href="javascript:;">京公网安备11010502025545号</a></p>
+        <p><i class="ico-record"></i><i class="ico-knet"></i><i class="ico-12315"></i></p>
+    </div>
+</div>
+<!--底部版权信息结束-->
+</body>
+</html>
